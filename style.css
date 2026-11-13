@@ -962,3 +962,284 @@ button:hover,
   }
 }
 
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 720px) {
+
+  .site-header {
+    height: 65px;
+    padding: 0 5%;
+  }
+
+  .brand {
+    font-size: 17px;
+  }
+
+  .brand-mark {
+    width: 39px;
+    height: 39px;
+    font-size: 27px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .menu-toggle span {
+    width: 23px;
+    height: 2px;
+    background: white;
+    border-radius: 3px;
+  }
+
+  .cv-button {
+    font-size: 11px;
+    padding: 9px 11px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: #06152b;
+    border-radius: 0 0 14px 14px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 35px 6% 25px;
+    min-height: 0;
+    display: block;
+  }
+
+  .eyebrow {
+    font-size: 23px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .hero h2 {
+    font-size: 17px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-art {
+    height: 260px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .portrait-ring {
+    width: 220px;
+    height: 220px;
+  }
+
+  .dream-note {
+    right: 0;
+    top: 42%;
+    font-size: 20px;
+  }
+
+  .hero-dots {
+    left: 8%;
+    top: 55%;
+  }
+
+  /* Dashboard */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    padding: 0 4% 20px;
+    gap: 12px;
+  }
+
+  .panel,
+  .projects-panel,
+  .skills-panel,
+  .ai-panel,
+  .experience-panel,
+  .contact-panel {
+    grid-column: 1;
+    min-width: 0;
+  }
+
+  /* About */
+  .about-content {
+    grid-template-columns: 38% 1fr;
+    gap: 10px;
+  }
+
+  .about-photo {
+    height: 145px;
+  }
+
+  .about-content p,
+  .experience-panel p,
+  .contact-panel p,
+  .ai-copy p {
+    font-size: 13px;
+  }
+
+  /* Skills */
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .skills-list .skill {
+    font-size: 12px;
+    padding: 9px 7px;
+    justify-content: center;
+  }
+
+  /* Projects */
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .project-art {
+    height: 82px;
+  }
+
+  .project-card h4 {
+    font-size: 13px;
+  }
+
+  .project-card p {
+    font-size: 11px;
+  }
+
+  /* Contact */
+  .contact-panel > p {
+    margin-left: 0;
+  }
+
+  .contact-socials {
+    gap: 10px;
+  }
+
+  .contact-socials a {
+    font-size: 13px;
+    padding: 10px 13px;
+  }
+
+  /* AI section */
+  .ai-panel {
+    min-height: 170px;
+    flex-wrap: wrap;
+  }
+
+  .ai-visual span {
+    font-size: 45px;
+  }
+
+  .ai-visual b {
+    font-size: 24px;
+  }
+
+  .ai-image {
+    height: 160px;
+  }
+
+  /* Footer */
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 4%;
+  }
+
+  .site-footer div {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 390px) {
+
+  .brand {
+    gap: 7px;
+    font-size: 15px;
+  }
+
+  .cv-button {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    height: 190px;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .project-card {
+    padding: 5px;
+  }
+
+  .project-card h4 {
+    font-size: 11px;
+  }
+
+  .project-card p {
+    font-size: 10px;
+  }
+
+  .project-art {
+    height: 65px;
+  }
+
+  .contact-socials a {
+    font-size: 12px;
+  }
+}
+
+
